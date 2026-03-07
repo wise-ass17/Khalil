@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Andrei Khalil Perez — Video Editor</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">AKP</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#shorts">Shorts</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="mailto:khalilpeditz&#64;gmail.com" class="btn-hire">Hire Me</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+
+      <div class="hero-photo-col">
+        <div class="hero-photo-frame">
+          <img src="photo.jpg" alt="Andrei Khalil Perez" class="hero-photo"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+          <div class="hero-photo-fallback">AKP</div>
+          <div class="hero-photo-tag">Video Editor</div>
+        </div>
+      </div>
+
+      <div class="hero-content-col">
+        <div class="hero-tag"><span class="pulse-dot"></span>Available for Projects</div>
+        <h1 class="hero-title">
+          <span class="ht-top">Andrei</span>
+          <span class="ht-mid">Khalil</span>
+          <span class="ht-bot">Perez</span>
+        </h1>
+        <div class="hero-rule"></div>
+        <p class="hero-role">Video Editor &amp; Content Creator</p>
+        <p class="hero-loc">&#128205; Cavite, Philippines</p>
+        <p class="hero-desc">Crafting cinematic stories for social media, real estate, brands &amp; beyond. Every cut tells something true.</p>
+        <div class="hero-btns">
+          <a href="#work" class="btn-primary">View Work</a>
+          <a href="#contact" class="btn-ghost">Get In Touch &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero-scroll-hint">
+      <span class="scroll-bar"></span>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>Reels</span><em>&#10022;</em>
+      <span>Real Estate</span><em>&#10022;</em>
+      <span>Cash Cow</span><em>&#10022;</em>
+      <span>Podcasts</span><em>&#10022;</em>
+      <span>Production</span><em>&#10022;</em>
+      <span>Advertisement</span><em>&#10022;</em>
+      <span>Long Form</span><em>&#10022;</em>
+      <span>Social Media</span><em>&#10022;</em>
+      <span>Reels</span><em>&#10022;</em>
+      <span>Real Estate</span><em>&#10022;</em>
+      <span>Cash Cow</span><em>&#10022;</em>
+      <span>Podcasts</span><em>&#10022;</em>
+      <span>Production</span><em>&#10022;</em>
+      <span>Advertisement</span><em>&#10022;</em>
+      <span>Long Form</span><em>&#10022;</em>
+      <span>Social Media</span><em>&#10022;</em>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-col">
+          <p class="eyebrow reveal">About Me</p>
+          <h2 class="section-title reveal">Turning Footage<br/><em>Into Stories</em></h2>
+          <p class="about-body reveal">I'm Andrei Khalil Perez, a video editor based in the Philippines focused on making social media content that actually performs.</p>
+          <p class="about-body reveal">From snappy reels to full productions, real estate tours to brand ads — I bring rhythm, clarity, and emotion to every cut.</p>
+        </div>
+        <div class="skills-col">
+          <p class="eyebrow reveal">What I Do</p>
+          <div class="skills-grid">
+            <div class="skill-card reveal"><span class="skill-ico">&#127916;</span><h3>Social Media</h3><p>Reels, shorts, and vertical content built for engagement.</p></div>
+            <div class="skill-card reveal"><span class="skill-ico">&#127968;</span><h3>Real Estate</h3><p>Cinematic tours that sell the lifestyle, not just the space.</p></div>
+            <div class="skill-card reveal"><span class="skill-ico">&#128226;</span><h3>Advertisement</h3><p>Brand-driven ads that convert viewers into customers.</p></div>
+            <div class="skill-card reveal"><span class="skill-ico">&#127897;&#65039;</span><h3>Podcasts &amp; Production</h3><p>Long-form edits with polish, pace, and professional finish.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="container">
+      <p class="eyebrow reveal">Portfolio</p>
+      <h2 class="section-title reveal">Featured <em>Work</em></h2>
+      <div class="work-grid">
+
+        <!-- 1: Production - YT -->
+        <div class="work-card reveal" style="grid-column:1/8;grid-row:1">
+          <div class="work-media yt-wrap" onclick="openYT('Rd86llew8zQ')">
+            <img src="https://img.youtube.com/vi/Rd86llew8zQ/maxresdefault.jpg" alt="Production" class="yt-thumb"/>
+            <div class="yt-overlay">
+              <div class="play-circle"><svg viewBox="0 0 24 24" width="26" height="26" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+              <span class="play-label">Watch on YouTube</span>
+            </div>
+          </div>
+          <div class="work-info"><span class="wtag">Production</span><h3>Golf Instruction Film</h3></div>
+        </div>
+
+        <!-- 2: Advertisement - Drive -->
+        <div class="work-card reveal" style="grid-column:8/13;grid-row:1">
+          <div class="work-media drive-wrap" onclick="playDrive(this,'1xkcdToybegDSZ04QL-XHZJB9Pl2EAv77')">
+            <img src="https://drive.google.com/thumbnail?id=1xkcdToybegDSZ04QL-XHZJB9Pl2EAv77&sz=w800" alt="Advertisement" class="drive-thumb-img"/>
+            <div class="yt-overlay">
+              <div class="play-circle"><svg viewBox="0 0 24 24" width="26" height="26" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+              <span class="play-label">Click to Play</span>
+            </div>
+          </div>
+          <div class="work-info"><span class="wtag">Advertisement</span><h3>Brand Ad Reel</h3></div>
+        </div>
+
+        <!-- 3: Educational - YT -->
+        <div class="work-card reveal" style="grid-column:1/5;grid-row:2">
+          <div class="work-media yt-wrap" onclick="openYT('xFxEuWqTFIo')">
+            <img src="https://img.youtube.com/vi/xFxEuWqTFIo/maxresdefault.jpg" alt="Educational" class="yt-thumb"/>
+            <div class="yt-overlay">
+              <div class="play-circle"><svg viewBox="0 0 24 24" width="26" height="26" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+              <span class="play-label">Watch on YouTube</span>
+            </div>
+          </div>
+          <div class="work-info"><span class="wtag">Educational</span><h3>Iron Distance Drill</h3></div>
+        </div>
+
+        <!-- 4: Real Estate - Drive -->
+        <div class="work-card reveal" style="grid-column:5/9;grid-row:2">
+          <div class="work-media drive-wrap" onclick="playDrive(this,'15_NPEpyVtveN01GsvLi9riRqmueJ8Gx0')">
+            <img src="https://drive.google.com/thumbnail?id=15_NPEpyVtveN01GsvLi9riRqmueJ8Gx0&sz=w800" alt="Real Estate" class="drive-thumb-img"/>
+            <div class="yt-overlay">
+              <div class="play-circle"><svg viewBox="0 0 24 24" width="26" height="26" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+              <span class="play-label">Click to Play</span>
+            </div>
+          </div>
+          <div class="work-info"><span class="wtag">Real Estate</span><h3>Property Showcase</h3></div>
+        </div>
+
+        <!-- 5: Reels - Drive -->
+        <div class="work-card reveal" style="grid-column:9/13;grid-row:2">
+          <div class="work-media drive-wrap" onclick="playDrive(this,'1RpUgL3c3O8zVr1arW1Wiz0lHA3UmEiNY')">
+            <img src="https://drive.google.com/thumbnail?id=1RpUgL3c3O8zVr1arW1Wiz0lHA3UmEiNY&sz=w800" alt="Reels" class="drive-thumb-img"/>
+            <div class="yt-overlay">
+              <div class="play-circle"><svg viewBox="0 0 24 24" width="26" height="26" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+              <span class="play-label">Click to Play</span>
+            </div>
+          </div>
+          <div class="work-info"><span class="wtag">Reels</span><h3>Social Reel Cut</h3></div>
+        </div>
+
+        <!-- 6: Long Form - Drive -->
+        <div class="work-card reveal" style="grid-column:1/6;grid-row:3">
+          <div class="work-media drive-wrap" onclick="playDrive(this,'1ZZStTKa9EgDC1SpiGb6KcWl3d9kYuZZ6')">
+            <img src="https://drive.google.com/thumbnail?id=1ZZStTKa9EgDC1SpiGb6KcWl3d9kYuZZ6&sz=w800" alt="Long Form" class="drive-thumb-img"/>
+            <div class="yt-overlay">
+              <div class="play-circle"><svg viewBox="0 0 24 24" width="26" height="26" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+              <span class="play-label">Click to Play</span>
+            </div>
+          </div>
+          <div class="work-info"><span class="wtag">Long Form</span><h3>Long Form Content</h3></div>
+        </div>
+
+        <!-- 7: Business - Drive -->
+        <div class="work-card reveal" style="grid-column:6/13;grid-row:3">
+          <div class="work-media drive-wrap" onclick="playDrive(this,'1VjwHh24MYweRWf6sOGGQblduXPc05k_F')">
+            <img src="https://drive.google.com/thumbnail?id=1VjwHh24MYweRWf6sOGGQblduXPc05k_F&sz=w800" alt="Business" class="drive-thumb-img"/>
+            <div class="yt-overlay">
+              <div class="play-circle"><svg viewBox="0 0 24 24" width="26" height="26" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+              <span class="play-label">Click to Play</span>
+            </div>
+          </div>
+          <div class="work-info"><span class="wtag">Business</span><h3>Running a Business</h3></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SHORTS -->
+  <section class="shorts" id="shorts">
+    <div class="container">
+      <p class="eyebrow reveal">Short Form</p>
+      <h2 class="section-title reveal">Quick Cuts &amp; <em>Shorts</em></h2>
+      <div class="shorts-grid">
+
+        <div class="short-card reveal">
+          <div class="short-media drive-wrap" onclick="playDrive(this,'15A5cVBe7uMc4L9Lj4BIiw2trT_WyLcUT')">
+            <img src="https://drive.google.com/thumbnail?id=15A5cVBe7uMc4L9Lj4BIiw2trT_WyLcUT&sz=w600" alt="Short 01" class="drive-thumb-img"/>
+            <div class="yt-overlay"><div class="play-circle"><svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </div>
+          <p class="short-cap"><span>01</span> Short</p>
+        </div>
+
+        <div class="short-card reveal">
+          <div class="short-media drive-wrap" onclick="playDrive(this,'16gzYQ-W2hplIVXu0vnMDhboxMzXqRwW1')">
+            <img src="https://drive.google.com/thumbnail?id=16gzYQ-W2hplIVXu0vnMDhboxMzXqRwW1&sz=w600" alt="Short 02" class="drive-thumb-img"/>
+            <div class="yt-overlay"><div class="play-circle"><svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </div>
+          <p class="short-cap"><span>02</span> Short</p>
+        </div>
+
+        <div class="short-card reveal">
+          <div class="short-media drive-wrap" onclick="playDrive(this,'1WqXY0H3DtkoDDq6hLDEZtxGcrm-Y_XwI')">
+            <img src="https://drive.google.com/thumbnail?id=1WqXY0H3DtkoDDq6hLDEZtxGcrm-Y_XwI&sz=w600" alt="Short 03" class="drive-thumb-img"/>
+            <div class="yt-overlay"><div class="play-circle"><svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </div>
+          <p class="short-cap"><span>03</span> Short</p>
+        </div>
+
+        <div class="short-card reveal">
+          <div class="short-media drive-wrap" onclick="playDrive(this,'1H-CgLeb-L5UVkQhp09vpzinEMMqV5LwT')">
+            <img src="https://drive.google.com/thumbnail?id=1H-CgLeb-L5UVkQhp09vpzinEMMqV5LwT&sz=w600" alt="Short 04" class="drive-thumb-img"/>
+            <div class="yt-overlay"><div class="play-circle"><svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </div>
+          <p class="short-cap"><span>04</span> Short</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-cta">
+        <p class="eyebrow reveal">Contact</p>
+        <h2 class="section-title reveal">Let's Work<br/><em>Together</em></h2>
+        <p class="contact-sub reveal">Have a project in mind? Reach out — I'd love to create something remarkable with you.</p>
+        <a href="mailto:khalilpeditz&#64;gmail.com" class="btn-amber reveal">Start a Project</a>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:khalilpeditz&#64;gmail.com" class="clink reveal">
+          <span class="cicon">&#9993;</span>
+          <span class="ctext"><small>Email</small>khalilpeditz&#64;gmail.com</span>
+        </a>
+        <a href="tel:+639773798163" class="clink reveal">
+          <span class="cicon">&#9990;</span>
+          <span class="ctext"><small>Phone</small>+63 977 379 8163</span>
+        </a>
+        <a href="https://www.facebook.com/zaayyynnn" target="_blank" class="clink reveal">
+          <span class="cicon">f</span>
+          <span class="ctext"><small>Facebook</small>Andrei Khalil Perez</span>
+        </a>
+        <a href="https://www.instagram.com/khalil_perezz" target="_blank" class="clink reveal">
+          <span class="cicon">&#9678;</span>
+          <span class="ctext"><small>Instagram</small>@khalil_perezz</span>
+        </a>
+        <div class="clink no-hover reveal">
+          <span class="cicon">&#128205;</span>
+          <span class="ctext"><small>Location</small>Cavite, Philippines</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span class="footer-logo">AKP</span>
+    <span class="footer-copy">&copy; 2025 Andrei Khalil Perez &middot; All rights reserved</span>
+    <span class="footer-ph">Made in the Philippines &#127477;&#127469;</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
